@@ -5,3 +5,9 @@ export interface IProductState {
   isLoading: boolean
   error: string
 }
+
+export interface IAuth {
+  auth: boolean
+  name: string | null
+  email: string | null
+}
