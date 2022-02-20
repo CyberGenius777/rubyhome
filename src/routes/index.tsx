@@ -12,39 +12,41 @@ export enum RouteNames {
   PROPERTIES = '/properties',
   ABOUT = '/about',
   BLOG = '/blog',
-  CONTACTS = './contacts',
+  CONTACTS = '/contacts',
 }
 
-export const publicRoutes: IRoute[] = [
+const publicRoutes: IRoute[] = [
   {
     path: RouteNames.LOGIN,
-    element: Login,
+    element: <Login />,
   },
   {
     path: RouteNames.CONTACTS,
-    element: Contacts,
+    element: <Contacts />,
   },
 ]
 
-export const privateRoutes: IRoute[] = [
+const privateRoutes: IRoute[] = [
   {
     path: RouteNames.HOME,
-    element: Home,
+    element: <Home />,
   },
   {
     path: RouteNames.PROPERTIES,
-    element: Properties,
+    element: <Properties />,
   },
   {
     path: RouteNames.ABOUT,
-    element: About,
+    element: <About />,
   },
   {
     path: RouteNames.BLOG,
-    element: Blog,
+    element: <Blog />,
   },
   {
     path: RouteNames.CONTACTS,
-    element: Contacts,
+    element: <Contacts />,
   },
 ]
+
+export { publicRoutes, privateRoutes }

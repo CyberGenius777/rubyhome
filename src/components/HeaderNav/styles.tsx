@@ -5,7 +5,7 @@ export const HeaderNavigation = styled.nav`
   border-bottom: 1px solid #ccc;
   height: 50px;
   display: grid;
-  grid-template-columns: repeat(5, 200px);
+  grid-template-columns: repeat(6, 200px);
   align-content: center;
   justify-content: center;
 `
